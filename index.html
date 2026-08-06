@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GWIST Trivia</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= START SCREEN ================= -->
+
+    <section id="start-screen" class="screen active">
+
+        <h1>GWIST Trivia</h1>
+
+        <button id="start-btn">
+            START
+        </button>
+
+    </section>
+
+
+    <!-- ================= CATEGORY SCREEN ================= -->
+
+    <section id="category-screen" class="screen">
+
+        <h1>Select a Category</h1>
+
+        <div id="category-buttons">
+
+            <button class="category-btn" data-category="Women in Tech">
+                Women in Tech
+            </button>
+
+            <button class="category-btn" data-category="Women Nobel Prize Winners">
+                Women Nobel Prize Winners
+            </button>
+
+            <button class="category-btn" data-category="AI & Emerging Technology">
+                AI & Emerging Technology
+            </button>
+
+            <button class="category-btn" data-category="Space & STEM">
+                Space & STEM
+            </button>
+
+            <button class="category-btn" data-category="Women Who Changed the World">
+                Women Who Changed the World
+            </button>
+
+            <button class="category-btn" data-category="Pop Culture">
+                Pop Culture
+            </button>
+
+            <button class="category-btn" data-category="Trivia Mix">
+                Trivia Mix
+            </button>
+
+            <button class="category-btn" data-category="Scientific Innovations by Women">
+                Scientific Innovations by Women
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= QUIZ SCREEN ================= -->
+
+    <section id="quiz-screen" class="screen">
+
+        <div class="top-bar">
+
+            <div id="question-counter">
+                Question 1 of 3
+            </div>
+
+            <div id="score">
+                Score: 0
+            </div>
+
+        </div>
+
+        <div class="question-box">
+
+            <h2 id="question"></h2>
+
+            <div id="answers"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= END SCREEN ================= -->
+
+    <section id="end-screen" class="screen">
+
+        <h1>Thank You For Playing!</h1>
+
+        <h2 id="final-score"></h2>
+
+        <button id="play-again">
+            Play Again
+        </button>
+
+    </section>
+
+
+    <!-- ================= QUESTION DATABASES ================= -->
+
+    <script src="questions1.js"></script>
+    <script src="questions2.js"></script>
+    <script src="questions3.js"></script>
+    <script src="questions4.js"></script>
+    <script src="questions5.js"></script>
+    <script src="questions6.js"></script>
+    <script src="questions7.js"></script>
+    <script src="questions8.js"></script>
+
+    <!-- Main Game -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
